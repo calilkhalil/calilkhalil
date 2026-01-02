@@ -56,14 +56,8 @@ jobs:
           template: classic
           base: ""
           config_timezone: America/Sao_Paulo
-          users_ignored: github-actions[bot], dependabot[bot], dependabot-preview[bot]
-          plugin_habits: yes
-          plugin_habits_facts: yes
-          plugin_habits_charts: no
-          plugin_habits_days: 7
-          plugin_habits_from: 100
-          plugin_habits_languages_limit: 8
-          plugin_habits_trim: yes
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: half-year
           repositories_forks: yes
           filename: github-metrics-habits.svg
   
