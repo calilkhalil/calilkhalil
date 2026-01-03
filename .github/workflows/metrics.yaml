@@ -1,6 +1,6 @@
 name: Metrics
 on:
-  schedule: [{cron: "0 0 * * *"}]
+  schedule: [{cron: "0 */4 * * *"}]
   workflow_dispatch:
   push: {branches: ["main"]}
 jobs:
@@ -66,6 +66,24 @@ jobs:
           plugin_habits_trim: yes
           repositories_forks: yes
           filename: github-metrics-habits.svg
+  
+  github-metrics-notable:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.ALL_METRICS_TOKEN }}
+          user: calilkhalil
+          template: classic
+          base: ""
+          config_timezone: America/Sao_Paulo
+          plugin_notable: yes
+          plugin_notable_from: organization
+          plugin_notable_repositories: yes
+          repositories_forks: yes
+          filename: github-metrics-notable.svg
   
   github-metrics-fortune:
     runs-on: ubuntu-latest
