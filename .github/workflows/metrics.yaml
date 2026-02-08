@@ -81,9 +81,10 @@ jobs:
           config_timezone: America/Los_Angeles
           plugin_notable: yes
           plugin_notable_repositories: yes
+          plugin_notable_indepth: yes
           plugin_notable_from: organization, user
           plugin_notable_types: commit
-          #plugin_notable_filter: stars:>285 OR repo:kapitalresearch/blog
+          plugin_notable_filter: stars:>285 OR repo:kapitalresearch/blog
           filename: github-metrics-notable.svg
   
   github-metrics-fortune:
