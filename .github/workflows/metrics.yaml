@@ -85,9 +85,8 @@ jobs:
           plugin_notable_repositories: yes
           plugin_notable_indepth: yes
           plugin_notable_from: organization, user
-          plugin_notable_types: commit, pull_request, issue
+          plugin_notable_types: commit
           plugin_notable_filter: stars:>285
-          plugin_notable_limit: 5
           filename: github-metrics-notable.svg
   
   github-metrics-fortune:
