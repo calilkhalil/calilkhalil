@@ -1,6 +1,8 @@
 name: Metrics
 on:
-  schedule: [{cron: "0 0 * * *"}]
+  schedule: 
+    - {cron: "0 3 * * *"}  # 00:00 BRT (UTC-3)
+    - {cron: "0 15 * * *"} # 12:00 BRT (UTC-3)
   workflow_dispatch:
   push: {branches: ["main"]}
 jobs:
@@ -15,7 +17,7 @@ jobs:
           user: calilkhalil
           template: classic
           base: header, activity, community, repositories, metadata
-          config_timezone: America/Los_Angeles
+          config_timezone: America/Sao_Paulo
           plugin_followup: yes
           plugin_followup_sections: repositories
           repositories: 1000
@@ -32,7 +34,7 @@ jobs:
           user: calilkhalil
           template: classic
           base: ""
-          config_timezone: America/Los_Angeles
+          config_timezone: America/Sao_Paulo
           plugin_languages: yes
           plugin_languages_limit: 8
           plugin_languages_sections: most-used
@@ -55,7 +57,7 @@ jobs:
           user: calilkhalil
           template: classic
           base: ""
-          config_timezone: America/Los_Angeles
+          config_timezone: America/Sao_Paulo
           users_ignored: github-actions[bot], dependabot[bot], dependabot-preview[bot]
           plugin_habits: yes
           plugin_habits_facts: yes
@@ -78,13 +80,13 @@ jobs:
           user: calilkhalil
           template: classic
           base: ""
-          config_timezone: America/Los_Angeles
+          config_timezone: America/Sao_Paulo
           plugin_notable: yes
           plugin_notable_repositories: yes
           plugin_notable_indepth: yes
           plugin_notable_from: organization, user
           plugin_notable_types: commit
-          plugin_notable_filter: stars:>285 OR repo:kapitalresearch/blog
+          plugin_notable_filter: stars:>285 OR repo:kapitalresearch/blog OR repo:EricZimmerman/MFTECmd
           filename: github-metrics-notable.svg
   
   github-metrics-fortune:
@@ -98,7 +100,7 @@ jobs:
           user: calilkhalil
           template: classic
           base: ""
-          config_timezone: America/Los_Angeles
+          config_timezone: America/Sao_Paulo
           plugin_fortune: yes
           repositories_forks: yes
           filename: github-metrics-fortune.svg
@@ -114,7 +116,7 @@ jobs:
           user: calilkhalil
           template: classic
           base: ""
-          config_timezone: America/Los_Angeles
+          config_timezone: America/Sao_Paulo
           plugin_reactions: yes
           plugin_reactions_limit: 200
           plugin_reactions_details: percentage
