@@ -86,7 +86,7 @@ jobs:
           plugin_notable_indepth: yes
           plugin_notable_from: organization, user
           plugin_notable_types: commit, pull_request, issue
-          plugin_notable_filter: stars:>285 OR repo:kapitalresearch/blog OR repo:EricZimmerman/MFTECmd
+          plugin_notable_filter: stars:>285 OR repo:kapitalresearch/blog OR repo:EricZimmerman/MFTECmd OR owner:EricZimmerman
           plugin_notable_limit: 10
           filename: github-metrics-notable.svg
   
