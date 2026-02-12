@@ -84,10 +84,10 @@ jobs:
           template: classic
           base: ""
           config_timezone: America/Sao_Paulo
-          extras_css: "svg { transform: scale(1.03); transform-origin: top left; }"
+          extras_css: "svg { transform: scale(1.02); transform-origin: top left; }"
           plugin_notable: yes
           plugin_notable_repositories: yes
-          plugin_notable_indepth: no
+          plugin_notable_indepth: yes
           plugin_notable_from: all
           plugin_notable_types: commit
           plugin_notable_filter: stars:>285
