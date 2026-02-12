@@ -18,7 +18,7 @@ jobs:
           template: classic
           base: header, activity, community, repositories, metadata
           config_timezone: America/Sao_Paulo
-          extras_css: "svg { transform: scale(1.05); transform-origin: top left; }"
+          extras_css: "svg { transform: scale(1.03); transform-origin: top left; }"
           plugin_followup: yes
           plugin_followup_sections: repositories
           repositories: 1000
@@ -36,7 +36,7 @@ jobs:
           template: classic
           base: ""
           config_timezone: America/Sao_Paulo
-          extras_css: "svg { transform: scale(1.05); transform-origin: top left; }"
+          extras_css: "svg { transform: scale(1.03); transform-origin: top left; }"
           plugin_languages: yes
           plugin_languages_limit: 8
           plugin_languages_sections: most-used
@@ -60,7 +60,7 @@ jobs:
           template: classic
           base: ""
           config_timezone: America/Sao_Paulo
-          extras_css: "svg { transform: scale(1.05); transform-origin: top left; }"
+          extras_css: "svg { transform: scale(1.03); transform-origin: top left; }"
           users_ignored: github-actions[bot], dependabot[bot], dependabot-preview[bot]
           plugin_habits: yes
           plugin_habits_facts: yes
@@ -84,7 +84,7 @@ jobs:
           template: classic
           base: ""
           config_timezone: America/Sao_Paulo
-          extras_css: "svg { transform: scale(1.05); transform-origin: top left; }"
+          extras_css: "svg { transform: scale(1.03); transform-origin: top left; }"
           plugin_notable: yes
           plugin_notable_repositories: yes
           plugin_notable_indepth: yes
@@ -105,7 +105,7 @@ jobs:
           template: classic
           base: ""
           config_timezone: America/Sao_Paulo
-          extras_css: "svg { transform: scale(1.05); transform-origin: top left; }"
+          extras_css: "svg { transform: scale(1.03); transform-origin: top left; }"
           plugin_fortune: yes
           repositories_forks: yes
           filename: github-metrics-fortune.svg
@@ -122,7 +122,7 @@ jobs:
           template: classic
           base: ""
           config_timezone: America/Sao_Paulo
-          extras_css: "svg { transform: scale(1.05); transform-origin: top left; }"
+          extras_css: "svg { transform: scale(1.03); transform-origin: top left; }"
           plugin_reactions: yes
           plugin_reactions_limit: 200
           plugin_reactions_details: percentage
