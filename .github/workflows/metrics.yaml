@@ -53,9 +53,8 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: hxreborn/metrics@master
+      - uses: dkhokhlov/metrics@master
         with:
-          use_prebuilt_image: no
           token: ${{ secrets.ALL_METRICS_TOKEN }}
           user: calilkhalil
           template: classic
