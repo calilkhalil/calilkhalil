@@ -53,13 +53,13 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: lowlighter/metrics@latest
+      - uses: hxreborn/metrics@master
         with:
+          use_prebuilt_image: no
           token: ${{ secrets.ALL_METRICS_TOKEN }}
           user: calilkhalil
           template: classic
           base: ""
-          config_debug: yes
           config_timezone: America/Sao_Paulo
           extras_css: "svg { transform: scale(1.01); transform-origin: top left; }"
           users_ignored: github-actions[bot], dependabot[bot], dependabot-preview[bot]
